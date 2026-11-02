@@ -1,0 +1,19 @@
+name: FirstJoinClass
+version: 1.0.0
+main: ru.orbital.firstjoinclass.FirstJoinClassPlugin
+api-version: '1.21'
+description: Runs /class automatically when a player joins for the first time
+authors: [ Server ]
+
+commands:
+  firstjoinclass:
+    description: Manage the first-join class prompt
+    usage: /firstjoinclass <reload|reset|run> [player]
+    aliases: [ fjc ]
+    permission: firstjoinclass.admin
+    permission-message: 'Unknown command.'
+
+permissions:
+  firstjoinclass.admin:
+    description: Access to /firstjoinclass
+    default: op

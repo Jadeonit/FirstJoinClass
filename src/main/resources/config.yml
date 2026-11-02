@@ -1,0 +1,17 @@
+# Run a command automatically on a player's first join.
+enabled: true
+
+# Command to execute as the player (without the leading slash).
+command: "class"
+
+# Delay before executing the command, in ticks (20 ticks = 1 second).
+# A small delay lets other plugins finish loading the player.
+delay-ticks: 20
+
+# true  - only players who have never played on this server before are prompted.
+# false - every player is prompted once (useful if the plugin is added later).
+only-new-players: true
+
+# Log a warning if the command could not be executed
+# (for example: unknown command or missing permission).
+warn-on-failure: true
